@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private int hitpoint = 3;
     void Start()
     {
-
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
         

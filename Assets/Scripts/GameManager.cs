@@ -1,27 +1,33 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject TopCam;
-
+    [SerializeField] private GameObject[] ActiveObjects;
+    [SerializeField] private TextMeshPro CountDownText;
     // Start is called before the first frame update
     void Start()
     {
-        _ = StartCoroutine(Wait());
+        StartCoroutine(CountDown());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    IEnumerator Wait()
+    IEnumerator CountDown()
     {
         yield return new WaitForSeconds(2);
-        TopCam.SetActive(false);
+        foreach (var item in ActiveObjects)
+        {
+            item.SetActive(true);
+        }
+        for (int i = 3; i > 0; i--)
+        {
 
+        }
     }
 }
