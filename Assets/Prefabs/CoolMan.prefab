@@ -1778,7 +1778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9c30776bfadae4f913565b54581c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGround: 0
   jumpPower: 8
+  snowBall: {fileID: 5684274137256532928, guid: 808ba9f38dd130b4e8f0e04f16162468,
+    type: 3}
 --- !u!64 &-8418986593672081739
 MeshCollider:
   m_ObjectHideFlags: 0
